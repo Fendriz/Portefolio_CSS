@@ -1,0 +1,20 @@
+//Colors
+$black:#000000;
+$white:#FFFFFF;
+$blue:#3c54a0;
+$orange:#FF9000;
+$light-blue:#b8c1e1;
+$light-orange:#fdf6ec;
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+$open-sans:'Open Sans', sans-serif; 
+//Media Queries
+$tab:992px;
+$mob:576px;  
+//imports
+@import "partials/general";
+@import "partials/header";
+@import "partials/packages";
+@import "partials/contact";
+@import "partials/footer";
+

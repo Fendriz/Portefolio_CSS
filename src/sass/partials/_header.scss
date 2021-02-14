@@ -1,0 +1,45 @@
+//@import 'blocktags';
+@import 'mixins';
+.navigation{
+	background-color: $blue;
+	padding:10px;
+
+	 &__brand{
+		@include fontS(48px);
+		display: inline-block;
+	}
+	&__links div{
+		float: right;
+		padding-top: 20px;
+	}
+	&__links a{
+		padding:0 20px;
+	}
+	&__links-active{
+
+		font-weight: bold;
+	}
+}
+@media (max-width: $tab){
+	.navigation{
+	    &__brand{
+	   	display: block;
+	   	text-align: center;
+	   }
+	   &__links{
+	   	text-align: center;
+	   }
+	   &__links div{
+	   	float: none;
+	   	display: block;
+	   	text-align: center;
+	   }
+	}
+}
+@media (max-width: $mob){
+	.navigation{
+	    &__brand{
+	   	@include fontS(30px);
+	   }
+	}
+}

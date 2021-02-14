@@ -1,0 +1,65 @@
+//@import url( https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import 'mixins';
+
+//$open-sans: 'Open Sans', sans-serif;
+h1{
+	font-family: $open-sans;
+	@include fontS(36px);
+}
+h2{
+	font-family: $open-sans;
+	@include fontS(28px);
+}
+
+body{
+	font-family: $open-sans;
+	position: relative;
+	min-height: 100vh;
+}
+main{
+	padding-bottom: 2.5rem;
+}
+a{
+	color: $white;
+}
+a:hover{
+	color: $black;
+	text-decoration: none;
+}
+a:focus{
+	outline: none;
+	color: $white;
+	text-decoration: none;
+}
+.container{
+	padding-bottom: 30px;
+}
+.btn {
+	background-color: $orange;
+	color: #fff;
+	font-weight: bold;
+}
+.btn:hover {
+
+	color: #fff;
+	background-color: $light-blue;
+}
+.btn:focus {
+
+	color: #fff;
+	background-color: $light-blue;
+	border-color:$light-blue;
+}
+.carousel-inner>.item>img {
+	width: 150%;
+}
+
+@media (max-width: 576px){
+	h1{
+		@include fontS(28px);
+	}
+	h2{
+		font-family: $open-sans;
+		@include fontS(22px);
+	}
+}

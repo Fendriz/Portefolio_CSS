@@ -1,0 +1,12 @@
+
+
+.packages {
+	border: 1px solid $orange;
+	padding: 15px;
+	margin-top: 30px;
+	
+	&:hover{
+	cursor: pointer;
+	background-color: $light-orange;
+	}
+}
